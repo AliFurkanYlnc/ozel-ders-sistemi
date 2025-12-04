@@ -1,4 +1,7 @@
 from app.extensions import db
+from app.models.availability import AvailabilitySlot
+from app.models.lesson import Lesson
+from app.models.lesson_request import LessonRequest
 from app.models.relationships import TutorDistrict, TutorSubject
 from app.models.student_profile import StudentProfile
 from app.models.subject import Subject
@@ -13,4 +16,7 @@ __all__ = [
     "Subject",
     "TutorSubject",
     "TutorDistrict",
+    "AvailabilitySlot",
+    "LessonRequest",
+    "Lesson",
 ]
