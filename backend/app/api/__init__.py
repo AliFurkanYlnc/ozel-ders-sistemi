@@ -8,10 +8,11 @@ availability_bp = Blueprint("availability", __name__, url_prefix="/availability"
 lesson_requests_bp = Blueprint("lesson_requests", __name__, url_prefix="/lesson-requests")
 lessons_bp = Blueprint("lessons", __name__, url_prefix="/lessons")
 matching_bp = Blueprint("matching", __name__, url_prefix="/matching")
+subjects_bp = Blueprint("subjects", __name__, url_prefix="/subjects")
 
 
 def register_blueprints(app: Flask) -> None:
-    from app.api import auth, availability, lesson_requests, lessons, matching, students, tutors  # noqa: F401
+    from app.api import auth, availability, lesson_requests, lessons, matching, students, subjects, tutors  # noqa: F401
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(students_bp)
@@ -20,3 +21,4 @@ def register_blueprints(app: Flask) -> None:
     app.register_blueprint(lesson_requests_bp)
     app.register_blueprint(lessons_bp)
     app.register_blueprint(matching_bp)
+    app.register_blueprint(subjects_bp)
