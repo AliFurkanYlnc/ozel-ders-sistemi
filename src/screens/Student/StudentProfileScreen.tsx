@@ -1,10 +1,10 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
-const StudentHomeScreen: React.FC = () => {
+const StudentProfileScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Öğrenci ana sayfasına hoş geldin!</Text>
+      <Text style={styles.text}>Profil bilgilerin burada yer alacak.</Text>
     </SafeAreaView>
   );
 };
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default StudentHomeScreen;
+export default StudentProfileScreen;
